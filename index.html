@@ -83,6 +83,16 @@
 			#form_error_container ul {
 				margin: 0px;
 			}
+			
+			/* Fix Styles */
+                        input[type=date],
+                        input[type=datetime-local],
+                        input[type=month],
+                        input[type=time] {
+                                /* Fixes height-shrink issue on iOS. This is resolved natively in later versions of bootstrap. */
+                                -webkit-appearance: listbox;
+                                height: calc(2.25rem + 2px);
+                        }
 
 			/* Page Styles */
 			footer #footer_title {
